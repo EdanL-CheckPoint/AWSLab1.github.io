@@ -70,20 +70,50 @@
 
   <section id="Objective">
     <h2>Objective</h2>
-    <p>This lab will simulate an issue with a customer's environment.</p>
+    <p>This lab will be split to 3 diferent problems which you will need to solve in the assigned order</p>
     <ul>
-        <li>Following some cloud maintenance on the customer side, the customer can no longer reach their web server</li>
-        <li>The customer hasn't had a chance to check anything yet</li>
+        <li>The customer has added to his existing GWLB environment an App Server in a new VPC</li>
+        <li>There are several issues faced since this addition</li>
     </ul>
+    <h3>Lab 4 - Problem A</h3>
+    
     <p>Lab objectives</p>
     <ul>
-        <li>Connecting the the Web Browser uses the frontend load balancer IP (frontend-lb)</li>
-        <li>Connecting to the web browser with HTTP will show a simple LAMP page</li>
-        <li>Note: The connection is only HTTP. HTTPS will not work</li>
+        <li>After connecting the App VPC, the App server can't be reached</li>
         <li><b>Goal:</b>
          <ul>
            <li>Find the root cause of the issue</li>
-           <li>Resolve the issue and manage to connect via HTTP to the web server</li>
+           <li>Manage to connect with HTTP from your computer to the app server</li>
+         </ul>
+        </li>
+        <br>
+    </ul>
+
+    <h3>Lab 4 - Problem B</h3>
+    
+    <p>Lab objectives</p>
+    <ul>
+        <li>The App server can't connect to the Web server</li>
+        <li><b>Goal:</b>
+         <ul>
+           <li>Resolve communicating between the App server and the Web server</li>
+           <li>Manage to ping between the 2 members</li>
+         </ul>
+        </li>
+        <br>
+    </ul>
+
+    <h3>Lab 4 - Problem C</h3>
+    
+    <p>Lab objectives</p>
+    <ul>
+        <li>Traffic between the App server and Web server are not hitting the correct rule</li>
+        <li>There is a specific rule in the policy made for App-Web traffic. but traffic is hitting the any-any accept rule</li>
+        <li><b>Goal:</b>
+         <ul>
+           <li>Find the reason for the wrong rule being hit</li>
+           <li>Make the relevant adjustments so that the traffic hits the correct rule</li>
+           <br>
          </ul>
         </li>
         <br>
